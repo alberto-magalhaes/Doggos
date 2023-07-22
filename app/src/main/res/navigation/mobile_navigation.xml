@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.albertomagalhaes.doggos.feature.breedList.BreedListFragment"
+        android:label="@string/title_breeds"
+        tools:layout="@layout/fragment_breed_list">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.albertomagalhaes.doggos.feature.favoriteBreedList.FavoriteBreedListFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorite_breed_list">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.albertomagalhaes.doggos.feature.breedDetails.BreedDetailsFragment"
+        android:label="@string/title_breeds"
+        tools:layout="@layout/fragment_breed_details">
+        <argument
+            android:name="breedId"
+            app:argType="string"
+            app:nullable="true">
+        </argument>
+        <deepLink
+            app:uri="android-app://com.albertomagalhaes.doggos.breed/{breedId}">
+        </deepLink>
+    </fragment>
+
+</navigation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_breed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:layout_gravity="center_vertical|start"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        tools:text="Beagle"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_favorite"
+        android:src="@drawable/ic_star_empty"
+        android:layout_margin="24dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical|end"/>
+
+</com.google.android.material.card.MaterialCardView>
