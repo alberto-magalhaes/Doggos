@@ -3,6 +3,7 @@ package com.albertomagalhaes.doggos.commons
 import com.albertomagalhaes.doggos.data.internal.AppDatabase
 import com.albertomagalhaes.doggos.data.repository.BreedRepository
 import com.albertomagalhaes.doggos.data.repository.BreedRepositoryImpl
+import com.albertomagalhaes.doggos.domain.usecase.BreedDetailsUseCase
 import com.albertomagalhaes.doggos.domain.usecase.BreedListUseCase
 import com.albertomagalhaes.doggos.domain.usecase.FavoriteBreedListUseCase
 import com.albertomagalhaes.doggos.domain.usecase.FavoriteBreedUseCase
@@ -14,19 +15,16 @@ import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val viewModelModule = module {
-    viewModel {
-        BreedListViewModel(get(), get())
-    }
-    viewModel {
-        FavoriteBreedListViewModel(get(), get())
-    }
-    viewModel { BreedDetailsViewModel() }
+    viewModel { BreedListViewModel(get(), get()) }
+    viewModel { FavoriteBreedListViewModel(get(), get()) }
+    viewModel { BreedDetailsViewModel(get()) }
 }
 
 val useCaseModule = module {
     single { BreedListUseCase(get()) }
     single { FavoriteBreedUseCase(get()) }
     single { FavoriteBreedListUseCase(get()) }
+    single { BreedDetailsUseCase(get()) }
 }
 
 val repositoryModule = module {

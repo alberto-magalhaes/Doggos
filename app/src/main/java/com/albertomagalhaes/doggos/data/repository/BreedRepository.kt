@@ -11,11 +11,9 @@ interface BreedRepository {
 
     fun getCacheBreedList(): Flow<List<BreedModel>>
 
+    fun getCacheBreed(breedId: String): Flow<BreedModel>
+
     suspend fun favoriteBreed(breed: BreedModel)
-
-
-
-    // TBD
 
     fun fetchBreedImageList(breedName: String): Flow<List<String>>
 

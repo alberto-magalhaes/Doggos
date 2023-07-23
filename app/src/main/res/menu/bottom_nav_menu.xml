@@ -4,11 +4,13 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_doggo"
-        android:title="@string/title_breeds" />
+        android:title="@string/title_breeds">
+    </item>
 
     <item
         android:id="@+id/navigation_favorites"
         android:icon="@drawable/ic_favorite"
-        android:title="@string/title_favorites" />
+        android:title="@string/title_favorites">
+    </item>
 
 </menu>

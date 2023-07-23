@@ -2,4 +2,7 @@
     <string name="app_name">Doggos</string>
     <string name="title_breeds">Breeds</string>
     <string name="title_favorites">Favorites</string>
+    <string name="other_images">Other images</string>
+    <string name="breed_gallery">%1$s Gallery</string>
+    <string name="favorite_empty_state">You haven\'t added any favorite breeds yet.</string>
 </resources>

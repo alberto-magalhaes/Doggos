@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="color_background" format="color"/>
+    <attr name="color_contrast" format="color"/>
+    <attr name="color_on_contrast" format="color"/>
+    <attr name="color_on_background" format="color"/>
+    <attr name="color_highlight" format="color"/>
+    <attr name="color_unselected" format="color"/>
+</resources>

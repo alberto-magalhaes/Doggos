@@ -20,18 +20,23 @@
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_details"
+        android:id="@+id/fragment_breed_details"
         android:name="com.albertomagalhaes.doggos.feature.breedDetails.BreedDetailsFragment"
-        android:label="@string/title_breeds"
         tools:layout="@layout/fragment_breed_details">
         <argument
             android:name="breedId"
             app:argType="string"
-            app:nullable="true">
+            app:nullable="false">
         </argument>
         <deepLink
             app:uri="android-app://com.albertomagalhaes.doggos.breed/{breedId}">
         </deepLink>
     </fragment>
+
+    <action
+        android:id="@+id/action_home_to_favorites"
+        app:destination="@id/navigation_favorites"
+        app:enterAnim="@anim/slide_in_right_to_left"
+        app:exitAnim="@anim/slide_out_left_to_right" />
 
 </navigation>

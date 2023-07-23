@@ -24,13 +24,14 @@ class BreedRepositoryImpl(
     }
 
     override fun getCacheBreedList() = breedDAO.getAll()
+    override fun getCacheBreed(breedId: String) = breedDAO.get(breedId)
 
     override suspend fun favoriteBreed(breed: BreedModel) {
         breedDAO.update(breed)
     }
 
     override fun fetchBreedImageList(breedName: String): Flow<List<String>> = flow {
-        emit(dogAPI.fetchBreedImages(breedName))
+        emit(dogAPI.fetchBreedImages(breedName).toInternal())
     }
 
     override suspend fun cacheBreedImageList(
@@ -39,5 +40,7 @@ class BreedRepositoryImpl(
     ) {
         breedDAO.insert(breedModel.copy(picturesURL = breedImageList))
     }
+
+
 
 }

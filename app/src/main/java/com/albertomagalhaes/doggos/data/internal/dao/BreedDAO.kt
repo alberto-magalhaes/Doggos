@@ -14,11 +14,11 @@ interface BreedDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(breedList: List<BreedModel>)
 
-    @Query("SELECT * FROM table_breed")
+    @Query("SELECT * FROM table_breed ORDER BY name ASC")
     fun getAll(): Flow<List<BreedModel>>
 
-    @Query("SELECT * FROM table_breed WHERE name = :name")
-    fun get(name: String): Flow<BreedModel>
+    @Query("SELECT * FROM table_breed WHERE id = :id LIMIT 1")
+    fun get(id: String): Flow<BreedModel>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(breed: BreedModel)
