@@ -16,3 +16,8 @@ To achieve the results, the application has the following characteristics:
 It is worth mentioning that the app was not modularized because of its simple nature, which would not benefit from a multi-module architecture, but in case of scalability needs, its packages are simple to transform into modules.
 
 With more time, it would be possible to add animations to the transitions between fragments and a loading state.
+
+
+
+https://github.com/alberto-magalhaes/Doggos/assets/99087727/6eb74bde-ea14-41d3-99ef-fb70e8ba253e
+
