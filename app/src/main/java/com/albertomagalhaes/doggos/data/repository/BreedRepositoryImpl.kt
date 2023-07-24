@@ -6,7 +6,6 @@ import com.albertomagalhaes.doggos.data.external.RetrofitService.getService
 import com.albertomagalhaes.doggos.data.internal.dao.BreedDAO
 import com.albertomagalhaes.doggos.data.internal.model.BreedModel
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flow
 
 class BreedRepositoryImpl(

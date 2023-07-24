@@ -19,7 +19,7 @@ class BreedDetailsUseCase(
             }
 
     private suspend fun syncBreedImages(breed: BreedModel) {
-        repository.fetchBreedImageList(breed.name)
+        repository.fetchBreedImageList(breed.name.lowercase())
             .flowOn(Dispatchers.IO)
             .collect { breedImageList ->
                 repository.cacheBreedImageList(breed, breedImageList)

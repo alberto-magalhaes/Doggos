@@ -2,16 +2,12 @@ package com.albertomagalhaes.doggos.feature.breedDetails
 
 import android.os.Bundle
 import android.view.View
-import androidx.core.net.toUri
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.navArgs
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import coil.load
 import com.albertomagalhaes.doggos.R
-import com.albertomagalhaes.doggos.commons.AppActivity
 import com.albertomagalhaes.doggos.commons.BaseFragment
-import com.albertomagalhaes.doggos.commons.components.GalleryGridDecoration
 import com.albertomagalhaes.doggos.commons.extensions.SingleTypeGenericAdapter
 import com.albertomagalhaes.doggos.databinding.FragmentBreedDetailsBinding
 import com.albertomagalhaes.doggos.databinding.ItemBreedImageListBinding

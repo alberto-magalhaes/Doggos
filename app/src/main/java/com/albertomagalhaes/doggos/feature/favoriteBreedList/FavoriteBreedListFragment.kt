@@ -7,7 +7,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.albertomagalhaes.doggos.commons.BaseFragment
 import com.albertomagalhaes.doggos.data.internal.model.BreedModel
-import com.albertomagalhaes.doggos.databinding.FragmentBreedListBinding
 import com.albertomagalhaes.doggos.databinding.FragmentFavoriteBreedListBinding
 import com.albertomagalhaes.doggos.domain.navigation.navigateToDetails
 import com.albertomagalhaes.doggos.feature.breedList.BreedListAdapter

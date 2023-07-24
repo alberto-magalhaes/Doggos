@@ -5,7 +5,6 @@ import com.albertomagalhaes.doggos.data.external.dto.BreedListDTO
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-
 interface DogAPI {
 
     @GET("breeds/list/all")
