@@ -8,12 +8,13 @@ import androidx.navigation.fragment.findNavController
 import com.albertomagalhaes.doggos.commons.BaseFragment
 import com.albertomagalhaes.doggos.data.internal.model.BreedModel
 import com.albertomagalhaes.doggos.databinding.FragmentBreedListBinding
+import com.albertomagalhaes.doggos.databinding.FragmentFavoriteBreedListBinding
 import com.albertomagalhaes.doggos.domain.navigation.navigateToDetails
 import com.albertomagalhaes.doggos.feature.breedList.BreedListAdapter
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class FavoriteBreedListFragment : BaseFragment<FragmentBreedListBinding>() {
+class FavoriteBreedListFragment : BaseFragment<FragmentFavoriteBreedListBinding>() {
 
     private val viewModel: FavoriteBreedListViewModel by viewModel()
     private var breedListAdapter: BreedListAdapter? = null
